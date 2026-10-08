@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chińczyk — NBA Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="comic">YATTA!</div>
+      <h1>CHIŃCZYK</h1>
+      <div class="comic">BYE BYE!</div>
+    </header>
+
+    <section id="lobby" class="card">
+      <h2>Play online</h2>
+      <input id="name" maxlength="20" placeholder="Your name">
+      <button id="create">Create game</button>
+      <div class="join">
+        <input id="code" maxlength="6" placeholder="Game code">
+        <button id="join">Join game</button>
+      </div>
+      <p id="message"></p>
+    </section>
+
+    <section id="game" class="hidden">
+      <div class="status" id="status"></div>
+      <img src="assets/board.png" alt="Personalised Chińczyk board" class="board">
+      <div class="controls">
+        <button id="roll">🎲 Roll dice</button>
+        <span id="dice">—</span>
+      </div>
+      <p class="hint">This starter uses the board artwork. The next step connects the moves to a realtime game room.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

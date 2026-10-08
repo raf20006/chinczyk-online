@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,sans-serif;background:#f5f5f5;color:#151515}
+.app{width:min(760px,94vw);margin:24px auto;padding-bottom:40px}
+header{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+h1{font-size:clamp(34px,9vw,64px);margin:0;font-weight:1000;color:#ffbd16;text-shadow:3px 3px 0 #111,-2px -2px 0 #111}
+.comic{font-size:clamp(18px,5vw,30px);font-weight:1000;background:#ffdf27;border:3px solid #111;border-radius:14px;padding:8px 12px;transform:rotate(-3deg)}
+.comic:last-child{transform:rotate(3deg)}
+.card{background:white;border:2px solid #ddd;border-radius:18px;padding:20px;margin-top:18px;text-align:center}
+input{font-size:16px;padding:12px;border:1px solid #aaa;border-radius:10px;margin:5px;max-width:220px}
+button{font-size:16px;font-weight:800;padding:12px 18px;border:0;border-radius:10px;background:#111;color:white;margin:5px;cursor:pointer}
+button:hover{opacity:.9}
+.join{margin-top:8px}
+.board{display:block;width:min(720px,100%);margin:16px auto;border-radius:12px}
+.status{text-align:center;font-weight:800;font-size:18px;margin:14px}
+.controls{text-align:center}.controls span{font-size:34px;font-weight:900;margin:10px}
+.hint{text-align:center;color:#666}.hidden{display:none}
