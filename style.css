@@ -14,3 +14,61 @@ button:hover{opacity:.9}
 .status{text-align:center;font-weight:800;font-size:18px;margin:14px}
 .controls{text-align:center}.controls span{font-size:34px;font-weight:900;margin:10px}
 .hint{text-align:center;color:#666}.hidden{display:none}
+
+
+
+/* Board and piece layer */
+.board-wrap {
+  position: relative;
+  width: min(90vw, 520px);
+  margin: 16px auto;
+  line-height: 0;
+}
+
+.board-wrap .board {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.pieces {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  line-height: normal;
+}
+
+.piece {
+  position: absolute;
+  width: 5%;
+  aspect-ratio: 1;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #0008;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.piece.red {
+  background: #ed1725;
+}
+
+.piece.green {
+  background: #008744;
+}
+
+.piece.blue {
+  background: #009bd7;
+}
+
+.piece.yellow {
+  background: #ffbf00;
+}
+
+.piece.selected {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
