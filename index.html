@@ -25,15 +25,23 @@
       <p id="message"></p>
     </section>
 
-    <section id="game" class="hidden">
-      <div class="status" id="status"></div>
-      <img src="assets/board.png" alt="Personalised Chińczyk board" class="board">
-      <div class="controls">
-        <button id="roll">🎲 Roll dice</button>
-        <span id="dice">—</span>
-      </div>
-      <p class="hint">This starter uses the board artwork. The next step connects the moves to a realtime game room.</p>
-    </section>
+  
+<section id="game" class="hidden">
+  <div class="status" id="status"></div>
+
+  <div class="board-wrap">
+    <img src="assets/board.png" alt="Personalised Chińczyk board" class="board">
+    <div id="pieces" class="pieces" aria-label="Game pieces"></div>
+  </div>
+
+  <div class="controls">
+    <button id="roll">🎲 Roll dice</button>
+    <span id="dice">—</span>
+  </div>
+
+  <p id="game-message" class="hint">Waiting for the game to start.</p>
+</section>
+
   </main>
   <script src="app.js"></script>
 </body>
